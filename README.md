@@ -7,7 +7,7 @@
 1，生成 CA 私钥 <br> 
 openssl genrsa -out ca.key 2048 <br>
 2 生成CA证书 <br>
-openssl req -x509 -new -nodes -key ca.key -subj “/CN=ca_host” -days 5000 -out ca.crt <br>
+openssl req -x509 -new -nodes -key ca.key -subj “/CN=www.test.com” -days 5000 -out ca.crt <br>
 3 生成服务端私钥 <br>
 openssl genrsa -out server.key 2048<br>
 4 生成服务端证书认证请求<br>
