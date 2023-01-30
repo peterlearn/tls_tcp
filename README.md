@@ -2,7 +2,7 @@
 # go 开始tcp tls server
 ### 参考地址 https://blog.csdn.net/wecloud1314/article/details/122409562
 ### https://blog.csdn.net/weixin_33862188/article/details/90255086
-
+### openssl windows 工具 http://slproweb.com/products/Win32OpenSSL.html
 
 1，生成 CA 私钥 <br> 
 openssl genrsa -out ca.key 2048 <br>
