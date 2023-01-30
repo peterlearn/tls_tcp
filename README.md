@@ -23,7 +23,7 @@ openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out s
 
 
 
-## 客户端 && 服务器 开启双向认证 tls_http下的目录
+## 客户端 && 服务器 开启双向认证 tls_https下的目录
 HTTPS的一种简单实现<br>
 生成密钥、证书<br>
 第一步，为服务器端和客户端准备公钥、私钥<br>
