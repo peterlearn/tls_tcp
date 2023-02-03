@@ -62,8 +62,11 @@ client 端到 CA 签名<br>
 &emsp;sudo vim /etc/hosts<br>
 添加服务端的ip信息对应的域名：192.168.1.100  test.com<br>
 
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout tsl.key -out tls.crt -subj "/CN=nginxsvc/O=nginxsvc" <br>
+## 额外记录
+````
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout tsl.key -out tls.crt -subj "/CN=nginxsvc/O=nginxsvc" 
 kubectl create secret tls tls-secret --key tls.key --cert tls.crt
+````
 
 
 
